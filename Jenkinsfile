@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Clonar codigo') {
       steps {
-        git 'https://github.com/Ness-luna/mi-repo.git'
+        git branch: 'main', url: 'https://github.com/Ness-luna/mi-repo.git'
       }
     }
     stage('Compilar') {
